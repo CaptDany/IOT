@@ -46,5 +46,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Credits
 
-- Developed by [Captain Dany](https://github.com/CaptDany/)
-
+- Developed by [Captain Dany](https://github.com/CaptDany/), [SpookyDeimos](https://github.com/SpookyDeimos/), [Erick Marmolejo](https://github.com/TsunamicStone6) and Gael Luna. 
