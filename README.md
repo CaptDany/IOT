@@ -20,10 +20,10 @@ This is a simple basketball game built using Unity. The objective of the game is
 ## How to Play
 
 1. Clone or download the repository.
-2. Open the project in Unity (version X.X.X or later).
-3. Find the scene named "MainGameScene" in the `Scenes` folder and open it.
+2. Open the project in Unity (version 2022.3.1f1 or later).
+3. Find the scene named "MainVrScene" in the `Scenes` folder and open it.
 4. Press the play button in Unity to start the game.
-5. Use the mouse to aim and left-click to shoot the basketball.
+5. Use a VR headset to aim and shoot the basketballs.
 6. Try to score as many points as you can!
 
 ## Screenshots
@@ -33,7 +33,7 @@ This is a simple basketball game built using Unity. The objective of the game is
 
 ## Dependencies
 
-- Unity X.X.X (download from [Unity website](https://unity.com/))
+- Unity 2022.3.1f1 (download from [Unity website](https://unity.com/))
 - (Any other external libraries or assets used in the project)
 
 ## Contributing
@@ -46,5 +46,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Credits
 
-- Developed by [Your Name](https://github.com/yourusername)
+- Developed by [Captain Dany](https://github.com/CaptDany/)
 
