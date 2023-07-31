@@ -1,11 +1,10 @@
 using UnityEngine;
 
-private BluetoothComScript BTLogic;
-
 public class RimScript : MonoBehaviour
 {
     public string bluetoothMessage = "rim"; // Message to send to ESP32 via Bluetooth when the rim is touched.
     private BasketScoreScript basketScoreScript; // Reference to the BasketScoreScript attached to the basket.
+    private BluetoothComScript BTLogic; // Reference to the BluetoothComScript.
 
     private void Start()
     {
@@ -13,7 +12,7 @@ public class RimScript : MonoBehaviour
         basketScoreScript = FindObjectOfType<BasketScoreScript>();
         if (BTLogic == null)
         {
-            Debug.LogError("GameLogicScript not found on the GameManager GameObject!");
+            Debug.LogError("BluetoothComScript not found!");
         }
     }
 

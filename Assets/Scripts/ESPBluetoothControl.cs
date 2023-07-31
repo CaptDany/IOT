@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
 
-public string PortName;
-
 public class Arduino : MonoBehaviour
 {
+    public string PortName;
+    
     SerialPort arduinoPort = new SerialPort(PortName);
     private void Awake()
     {
