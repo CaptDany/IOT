@@ -1,6 +1,6 @@
 # Unity Basketball Game
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](./Src/Images/game_ss.png)
 
 ## Description
 
