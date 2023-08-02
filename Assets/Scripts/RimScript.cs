@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 
 public class RimScript : MonoBehaviour
@@ -31,3 +32,4 @@ public class RimScript : MonoBehaviour
         Debug.Log("Sending Bluetooth message: " + message);
     }
 }
+*/
