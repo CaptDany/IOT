@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 14942035}
   - component: {fileID: 14942036}
   m_Layer: 5
-  m_Name: scrpthandler
+  m_Name: BallController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,8 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 5929974531659547432, guid: 52b666928a6ad44e79649e18f091aa61,
     type: 3}
-  startPoint: {fileID: 215957181}
-  endPoint: {fileID: 680880132}
+  position: {x: -0.1, y: 0.3, z: -2.7}
 --- !u!1 &19705904
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +214,7 @@ Transform:
   - {fileID: 1096671492}
   - {fileID: 197869930}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &150545955
 PrefabInstance:
@@ -550,7 +549,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f236fa44496173e40be1531e3fae8e45,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f236fa44496173e40be1531e3fae8e45,
         type: 3}
@@ -1047,7 +1046,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 98b4d1d58e7a59e4f8679ddfe1a197fc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98b4d1d58e7a59e4f8679ddfe1a197fc,
         type: 3}
@@ -1162,7 +1161,7 @@ Transform:
   - {fileID: 150545956}
   - {fileID: 1257060246}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &380598705 stripped
 GameObject:
@@ -1258,7 +1257,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 372d67ce1ee724a4a96b4f1392604d6e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 372d67ce1ee724a4a96b4f1392604d6e,
         type: 3}
@@ -2528,44 +2527,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 661558070}
-  scoreManager: {fileID: 0}
+  scoreManager: {fileID: 1913752647}
 --- !u!224 &661558072 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 781630661673262082, guid: c24a7635b5761984d81cf6c4aac26e0d,
     type: 3}
   m_PrefabInstance: {fileID: 661558068}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &680880131
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 680880132}
-  m_Layer: 0
-  m_Name: BallFinalPosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &680880132
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680880131}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10936209, y: 0.055, z: -2.759}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &780014488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,7 +3251,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 14942036}
     - target: {fileID: 4436940632021081988, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -3292,12 +3260,12 @@ PrefabInstance:
     - target: {fileID: 4436940632021081988, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnRespawnButtonClicked
+      value: SpawnBallAtPosition
       objectReference: {fileID: 0}
     - target: {fileID: 4436940632021081988, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: RespawnButton, Assembly-CSharp
+      value: BallController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4436940632021081988, guid: c24a7635b5761984d81cf6c4aac26e0d,
         type: 3}
@@ -3946,7 +3914,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fd6d5b9096266a74181be3f27e43d7ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6d5b9096266a74181be3f27e43d7ae,
         type: 3}
@@ -4928,7 +4896,7 @@ Transform:
   - {fileID: 940827574}
   - {fileID: 661558072}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531759245
 GameObject:
@@ -5019,7 +4987,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1540548566
 PrefabInstance:
@@ -5220,7 +5188,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fd6d5b9096266a74181be3f27e43d7ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fd6d5b9096266a74181be3f27e43d7ae,
         type: 3}
@@ -5488,7 +5456,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1913752647
 MonoBehaviour:
@@ -5547,7 +5515,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 176c214bde8a8114885ebd8e1ba34aa7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 176c214bde8a8114885ebd8e1ba34aa7,
         type: 3}
