@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RespawnButton : MonoBehaviour
 {
-    public GameObject basketballPrefab; // Drag and drop the basketball prefab to this variable in the Inspector.
+    public GameObject basketballPrefab;
 
     public void OnRespawnButtonClicked()
     {
